@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MailService\**" />
+    <EmbeddedResource Remove="MailService\**" />
+    <None Remove="MailService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Menpos.Application\Menpos.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MailService\" />
+    <Folder Include="MailServices\" />
   </ItemGroup>
 
 </Project>

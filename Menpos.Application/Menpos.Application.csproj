@@ -5,15 +5,21 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Validators\**" />
+	  <EmbeddedResource Remove="Validators\**" />
+	  <None Remove="Validators\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\Menpos.Domain\Menpos.Domain.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Validators\" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+	  <Folder Include="ModelValidators\" />
 	</ItemGroup>
 
 </Project>
